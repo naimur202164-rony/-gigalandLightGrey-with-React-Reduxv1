@@ -814,7 +814,7 @@ const Header = function ({ className }) {
                 </div>
               ) : (
                 <div>
-                      <NavLink to="/#"><abbr title={account}>{account.slice(0,4)}</abbr></NavLink>
+                      <NavLink to="/#"><abbr title={account}>{account.slice(0,6)}</abbr></NavLink>
                      
                 </div>
             
@@ -827,7 +827,7 @@ const Header = function ({ className }) {
                 className="de-menu-notification"
                 onClick={() => btn_icon_not(!shownot)}
                 ref={refpopnot}
-              >
+              > 
                 <div className="d-count">8</div>
                 <i className="fa fa-bell"></i>
                 {shownot && (
