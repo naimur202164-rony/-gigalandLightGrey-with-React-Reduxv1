@@ -814,8 +814,8 @@ const Header = function ({ className }) {
                 </div>
               ) : (
                 <div>
-                      <NavLink to="/#">{account.slice(0,4)}</NavLink>
-                      <NavLink to="/#">logout</NavLink>
+                      <NavLink to="/#"><abbr title={account}>{account.slice(0,4)}</abbr></NavLink>
+                     
                 </div>
             
               )}
