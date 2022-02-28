@@ -766,8 +766,8 @@ const Header = function ({ className }) {
                   </div>
                 </div>
                 <div className="navbar-item">
-                  <NavLink to="/activity">
-                    Activity
+                  <NavLink to="/mint">
+                    Mint
                     <span className="lines"></span>
                   </NavLink>
                 </div>
@@ -806,7 +806,7 @@ const Header = function ({ className }) {
           <div className="mainside">
             <div className="connect-wal">
               
-              {account == "" ? (
+              {account === "" ? (
                 <div className="container">
                   <NavLink onClick={{ walletAddress }} to="/#">
                     Connect meta

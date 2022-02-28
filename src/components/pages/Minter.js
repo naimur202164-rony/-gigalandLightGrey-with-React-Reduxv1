@@ -1,12 +1,12 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useCallback, useEffect, useState } from "react";
+import { createGlobalStyle } from 'styled-components';
+import api from "../../core/api";
 import {
   connectWallet,
   getCurrentWalletConnected,
-  mintNFT,
+  mintNFT
 } from "../../core/nft/interact";
-import { createGlobalStyle } from 'styled-components';
 import ColumnNewMint from '../components/ColumnNewMint';
-import api from "../../core/api";
 import Footer from '../components/footer';
 
 const GlobalStyles = createGlobalStyle`
